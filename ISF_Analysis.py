@@ -20,7 +20,7 @@ def Load_overall_analysis():
     # Avg ticket size
     Avg_amt = df.groupby('startUp')['amount'].sum().mean()
     # Total Funded Startups
-    Total_fnded = df['startUp'].nunique()
+    Total_funded = df['startUp'].nunique()
 
     col1,col2,col3,col4 = st.columns(4)
     with col1:
@@ -30,7 +30,7 @@ def Load_overall_analysis():
     with col3:
         st.metric('Avg Amt Invested',str(round(Avg_amt)) + ' Cr')
     with col4:
-        st.metric('Total Funded Startups',str(Total_fnded))
+        st.metric('Total Funded Startups',str(Total_funded))
 
     st.header('M-on-M Investment Graph')
     option = st.selectbox('Select Type',['Total','Count'])
@@ -127,10 +127,10 @@ elif option == 'StartUp':
         Load_startup_details(selected_startup)    
 else:
     st.title('Investor Analysis')
-    selcted_investor = st.sidebar.selectbox('Select Investor',sorted(set(df['investors'].str.split(',').sum())))
+    selected_investor = st.sidebar.selectbox('Select Investor',sorted(set(df['investors'].str.split(',').sum())))
     btn2 = st.sidebar.button('Find Investor Details')
     if btn2:
-        Load_investor_details(selcted_investor)
+        Load_investor_details(selected_investor)
 
     
 
