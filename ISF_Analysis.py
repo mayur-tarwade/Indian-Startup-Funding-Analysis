@@ -41,8 +41,8 @@ def Load_overall_analysis():
 
     temp1['x-axis' ] = temp1['month'].astype('str') + '-' + temp1['year'].astype('str')
 
-    fig5, ax5 = plt.subplots()
-    ax5.plot(temp1['x-axis'],temp1['amount'])
+    fig5, x5 = plt.subplots()
+    x5.plot(temp1['x-axis'],temp1['amount'])
     st.pyplot(fig5) 
     
 
@@ -72,15 +72,15 @@ def Load_investor_details(investor):
         big_invest = df[df['investors'].str.contains(investor)].groupby('startUp')['amount'].sum().sort_values(ascending =False).head()
         st.subheader('Biggest Investments')
         #st.dataframe(big_invest)
-        fig, ax = plt.subplots()
-        ax.bar(big_invest.index,big_invest.values)
+        fig, x = plt.subplots()
+        x.bar(big_invest.index,big_invest.values)
         st.pyplot(fig)
 
     with col2:
         vertical = df[df['investors'].str.contains(investor)].groupby('vertical')['amount'].sum()
         st.subheader('Sectors Invested in')
-        fig1, ax1 = plt.subplots()
-        ax1.pie(vertical,labels=vertical.index,autopct='%0.01f%%')
+        fig1, x1 = plt.subplots()
+        x1.pie(vertical,labels=vertical.index,autopct='%0.01f%%')
         st.pyplot(fig1)
 
     
@@ -88,15 +88,15 @@ def Load_investor_details(investor):
     with col3:
         round = df[df['investors'].str.contains(investor)].groupby('round')['amount'].sum()
         st.subheader('Investment In Stage')
-        fig2, ax2 = plt.subplots()
-        ax2.pie(round,labels=round.index,autopct='%0.01f%%')
+        fig2, x2 = plt.subplots()
+        x2.pie(round,labels=round.index,autopct='%0.01f%%')
         st.pyplot(fig2)
 
     with col4:
         city = df[df['investors'].str.contains(investor)].groupby('City')['amount'].sum()
         st.subheader('Investment In Cities')
-        fig3, ax3 = plt.subplots()
-        ax3.pie(city,labels=city.index,autopct='%0.01f%%')
+        fig3, x3 = plt.subplots()
+        x3.pie(city,labels=city.index,autopct='%0.01f%%')
         st.pyplot(fig3)
 
     col5, col6 = st.columns(2)   
@@ -104,8 +104,8 @@ def Load_investor_details(investor):
         df['year'] = df['date'].dt.year
         year_series = df[df['investors'].str.contains(investor)].groupby('year')['amount'].sum()
         st.subheader('Y-O-Y Investment')
-        fig4, ax4 = plt.subplots()
-        ax4.plot(year_series.index,year_series.values)
+        fig4, x4 = plt.subplots()
+        x4.plot(year_series.index,year_series.values)
         st.pyplot(fig4)
     
 df = pd.read_csv('Start_funding_cleaned.csv')
