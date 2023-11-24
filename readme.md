@@ -1,4 +1,4 @@
-### This is just study purpose Analysis project!
-
+### Indian Startup Analysis
+#### It provide detail analysis of Indian Startups and Investment in it.
 
 
