@@ -1,4 +1,4 @@
 ### Indian Startup Analysis
-#### - It provide detail analysis of Indian Startups and Investment in it.
+#### -It provide detail analysis of Indian Startups and Investment in it.
 
 
