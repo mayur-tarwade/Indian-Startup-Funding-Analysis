@@ -17,12 +17,14 @@ def Load_overall_analysis():
     total_amt = round(df['amount'].sum()) 
     # Max Amount Invested in Startup
     max_amt = df.groupby('startUp')['amount'].max().sort_values(ascending=False).head(1).values[0]
+    # Top 5 Investors
+    Top5 = df.groupby('investors')['amount'].max().sort_values(ascending=False).head(5)
     # Avg ticket size
     Avg_amt = df.groupby('startUp')['amount'].sum().mean()
     # Total Funded Startups
     Total_funded = df['startUp'].nunique()
 
-    col1,col2,col3,col4 = st.columns(4)
+    col1,col2,col3,col4,col5 = st.columns(5)
     with col1:
         st.metric('Total Amt Invested', str(total_amt) + ' Cr')
     with col2:
@@ -31,6 +33,8 @@ def Load_overall_analysis():
         st.metric('Avg Amt Invested',str(round(Avg_amt)) + ' Cr')
     with col4:
         st.metric('Total Funded Startups',str(Total_funded))
+    with col5:
+        st.dataframe(Top 5)
 
     st.header('M-on-M Investment Graph')
     option = st.selectbox('Select Type',['Total','Count'])
