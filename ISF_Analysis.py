@@ -33,7 +33,7 @@ def Load_overall_analysis():
         st.metric('Total Funded Startups',str(Total_funded))
 
      # Top 10 Investors
-    st.title('Top 10 Invesrors amount in Cr')
+    st.title('Top 10 Investors(amount in Cr)')
     Top10_Investors = df.groupby('investors')['amount'].max().sort_values(ascending=False).head(10)
     st.dataframe(Top10_Investors)
 
