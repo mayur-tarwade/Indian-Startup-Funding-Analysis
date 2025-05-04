@@ -36,12 +36,12 @@ def Load_overall_analysis():
     st.title('Top 10 Investors(amount in Cr)')
     col1,col2 = st.columns(2)
     with col1:
-    Top10_Investors = df.groupby('investors')['amount'].max().sort_values(ascending=False).head(10)
-    st.dataframe(Top10_Investors)
+        Top10_Investors = df.groupby('investors')['amount'].max().sort_values(ascending=False).head(10)
+        st.dataframe(Top10_Investors)
     with col2:
-    fig6, x6 = plt.subplots()
-    x6.pie(Top10_Investors,labels=Top10_Investors.index,autopct='%0.01f%%')
-    st.pyplot(fig6)
+        fig6, x6 = plt.subplots()
+        x6.pie(Top10_Investors,labels=Top10_Investors.index,autopct='%0.01f%%')
+        st.pyplot(fig6)
 
     st.header('M-on-M Investment Graph')
     option = st.selectbox('Select Type',['Total','Count'])
