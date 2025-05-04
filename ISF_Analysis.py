@@ -19,7 +19,7 @@ def Load_overall_analysis():
     max_amt = df.groupby('startUp')['amount'].max().sort_values(ascending=False).head(1).values[0]
     # Top 10 Investors
     Top Ten Investors = df.groupby('investors')['amount'].max().sort_values(ascending=False).head(10)
-    st.dataframe(Top 10 Investors)
+    st.dataframe(Top Ten Investors)
     # Avg ticket size
     Avg_amt = df.groupby('startUp')['amount'].sum().mean()
     # Total Funded Startups
