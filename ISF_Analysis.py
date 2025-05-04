@@ -34,7 +34,7 @@ def Load_overall_analysis():
     with col4:
         st.metric('Total Funded Startups',str(Total_funded))
     with col5:
-        st.dataframe(Top 5)
+        st.dataframe(Top5)
 
     st.header('M-on-M Investment Graph')
     option = st.selectbox('Select Type',['Total','Count'])
