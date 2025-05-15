@@ -7,7 +7,7 @@ The dataset you uploaded contains information about startup funding events in In
 
 •	Total Columns: 8
 
-Column Descriptions
+### Column Descriptions
 1.	Date:
 The date on which the funding event occurred. (Format: YYYY-MM-DD)
 2.	Startup:
