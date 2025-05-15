@@ -89,7 +89,7 @@ Bangalore, Mumbai, and New Delhi dominate startup activity in India.
 2.	Top Industry Verticals by Total Funding
 "Consumer Internet", "eCommerce", and "Transportation" have received the highest overall funding. Note the inconsistency in how similar sectors are named (e.g., eCommerce vs. E-Commerce).
 3.	Funding Trend Over the Years
-There was a peak in funding in ### 2017 and ### 2019, followed by a major dip in 2020—likely due to the global pandemic
+There was a peak in funding in ###2017 and ###2019, followed by a major dip in 2020—likely due to the global pandemic
 
 
 
