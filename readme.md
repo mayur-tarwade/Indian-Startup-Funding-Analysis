@@ -1,7 +1,8 @@
 ### Indian Startup Analysis Model
 
 The dataset you uploaded contains information about startup funding events in India. Here’s an explanation of its structure:
-Dataset Overview
+### Dataset Overview
+
 •	Total Rows: 2,846 (each row represents a unique funding event)
 
 •	Total Columns: 8
