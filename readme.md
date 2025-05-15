@@ -1,5 +1,5 @@
 ### Indian Startup Analysis Model
-Indian Start Funding Analysis.
+
 The dataset you uploaded contains information about startup funding events in India. Here’s an explanation of its structure:
 Dataset Overview
 •	Total Rows: 2,846 (each row represents a unique funding event)
@@ -23,7 +23,7 @@ The type or stage of the funding round (e.g., Seed Round, Series A, Private Equi
 8.	Amount:
 The amount of funding received (in an unspecified currency, likely INR or USD). Stored as a float.
 
-Top 10 Cities by Number of Funding Events:
+### Top 10 Cities by Number of Funding Events:
 City	Count
 Bangalore	699
 Mumbai	565
@@ -58,7 +58,7 @@ Year	Total Funding (₹ Million)
  
 
 
-Here are the visualizations:
+### Here are the visualizations:
 1.	Top Cities by Number of Funding Events
 Bangalore, Mumbai, and New Delhi dominate startup activity in India.
 2.	Top Industry Verticals by Total Funding
