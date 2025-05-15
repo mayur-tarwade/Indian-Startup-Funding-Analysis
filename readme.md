@@ -47,7 +47,12 @@ Year	Total Funding (₹ Million)
 2019	78,077
 2020	3,219
 
- 
+ ![image](https://github.com/user-attachments/assets/941d7cb3-9228-4353-acf0-3dc91ea1d436)
+ ![image](https://github.com/user-attachments/assets/a06307ed-7dce-4b79-8076-3c4631374262)
+ ![image](https://github.com/user-attachments/assets/a2590da7-3585-4f8e-a98f-f401ca607fca)
+
+
+
 
  
  
