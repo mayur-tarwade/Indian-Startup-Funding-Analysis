@@ -8,22 +8,23 @@ The dataset contains information about startup funding events in India. Here’s
 •	Total Columns: 8
 
 ### Column Descriptions
-1.	Date:
+1.	**Date:**
 The date on which the funding event occurred. (Format: YYYY-MM-DD)
-2.	Startup:
+2.	**Startup:**
 The name of the startup that received funding.
-3.	Vertical:
+3.	**Vertical:**
 The broad industry or sector the startup belongs to (e.g., E-Tech, FinTech, Transportation).
-4.	Subvertical:
+4.	**Subvertical:**
 A more specific description of the business area (e.g., E-learning, App based shuttle service).
  Note: This column has missing values in some rows.
-5.	City:
+5.	**City:**
 The location where the startup is headquartered or where the funding was reported.
-6.	Investors:
+6.	**Investors:**
 The name(s) of the investor(s) involved in the funding round.
-7.	Round:
+7.	**Round:**
 The type or stage of the funding round (e.g., Seed Round, Series A, Private Equity Round).
-8.	Amount:
+
+8.	**Amount:**
 The amount of funding received (in an unspecified currency, likely INR or USD). Stored as a float.
 
 ### Top 10 Cities by Number of Funding Events:
