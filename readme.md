@@ -3,7 +3,9 @@
 The dataset you uploaded contains information about startup funding events in India. Here’s an explanation of its structure:
 Dataset Overview
 •	Total Rows: 2,846 (each row represents a unique funding event)
+
 •	Total Columns: 8
+
 Column Descriptions
 1.	Date:
 The date on which the funding event occurred. (Format: YYYY-MM-DD)
